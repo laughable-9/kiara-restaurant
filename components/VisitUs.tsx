@@ -29,8 +29,8 @@ export function VisitUs() {
           </Reveal>
         </div>
 
-        <div className="mt-20 grid gap-px bg-kiara-burgundy/15 sm:grid-cols-3">
-          <Reveal className="bg-kiara-cream p-8 sm:p-10">
+        <div className="mt-20 grid divide-y divide-kiara-burgundy/15 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+          <Reveal className="p-8 sm:p-10">
             <MapPin
               className="h-5 w-5 text-kiara-motif"
               strokeWidth={1.5}
@@ -43,7 +43,7 @@ export function VisitUs() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.1} className="bg-kiara-cream p-8 sm:p-10">
+          <Reveal delay={0.1} className="p-8 sm:p-10">
             <Phone
               className="h-5 w-5 text-kiara-motif"
               strokeWidth={1.5}
@@ -77,7 +77,7 @@ export function VisitUs() {
             </ul>
           </Reveal>
 
-          <Reveal delay={0.2} className="bg-kiara-cream p-8 sm:p-10">
+          <Reveal delay={0.2} className="p-8 sm:p-10">
             <Clock
               className="h-5 w-5 text-kiara-motif"
               strokeWidth={1.5}
