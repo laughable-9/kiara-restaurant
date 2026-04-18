@@ -61,7 +61,7 @@ export function MenuHighlights() {
           <div
             role="tablist"
             aria-label="Menu categories"
-            className="mt-16 -mx-6 flex snap-x gap-3 overflow-x-auto px-6 pb-2 sm:mx-0 sm:flex-wrap sm:justify-center sm:px-0"
+            className="mt-16 flex flex-wrap justify-center gap-2 sm:gap-3"
           >
             {menuSections.map((section) => {
               const isActive = section.id === activeId;
@@ -73,7 +73,7 @@ export function MenuHighlights() {
                   aria-controls={`menu-panel-${section.id}`}
                   id={`menu-tab-${section.id}`}
                   onClick={() => setActiveId(section.id)}
-                  className={`relative snap-start shrink-0 rounded-full border px-5 py-2 font-body text-sm tracking-wide whitespace-nowrap transition-colors duration-300 sm:text-base ${
+                  className={`rounded-full border px-4 py-1.5 font-body text-[0.8rem] tracking-wide whitespace-nowrap transition-colors duration-300 sm:px-5 sm:py-2 sm:text-base ${
                     isActive
                       ? "border-kiara-cream bg-kiara-cream text-kiara-burgundy"
                       : "border-kiara-cream/30 text-kiara-cream/75 hover:border-kiara-cream/60 hover:text-kiara-cream"
@@ -90,7 +90,7 @@ export function MenuHighlights() {
           role="tabpanel"
           id={`menu-panel-${active.id}`}
           aria-labelledby={`menu-tab-${active.id}`}
-          className="mt-14 min-h-[22rem]"
+          className="mt-14 h-[36rem] sm:h-[34rem]"
         >
           <AnimatePresence mode="wait">
             <motion.div
