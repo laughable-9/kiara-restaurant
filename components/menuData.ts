@@ -13,26 +13,8 @@ export type MenuSection = {
   items: MenuItem[];
 };
 
-// Curated selection from the full Kiara menu. The complete list lives at
-// /menu.html for the QR code; this teaser covers six sections that best
-// showcase the range of the house.
+// A preview. The full menu lives at /menu.html for the QR code.
 export const menuSections: MenuSection[] = [
-  {
-    id: "pampagana",
-    title: "Pampagana",
-    subtitle: "To awaken the appetite",
-    items: [
-      { name: "Lumpia ni Ate", note: "Togue", price: "180" },
-      { name: "Special Embutido", price: "230" },
-      { name: "Samosa", price: "200" },
-      { name: "Batchoy", price: "128" },
-      {
-        name: "Fries Platter",
-        note: "BBQ, cheese, or sour cream",
-        price: "170",
-      },
-    ],
-  },
   {
     id: "lolas-kitchen",
     title: "Lola's Kitchen",
@@ -70,53 +52,6 @@ export const menuSections: MenuSection[] = [
           { label: "Family", amount: "598" },
         ],
       },
-      {
-        name: "Chicken Pecho Inasal",
-        price: [{ label: "Solo", amount: "199" }],
-      },
-    ],
-  },
-  {
-    id: "pansit",
-    title: "Pansit",
-    subtitle: "Long life on a plate",
-    items: [
-      {
-        name: "Canton",
-        note: "Egg noodles, stir-fried",
-        price: [
-          { label: "Solo", amount: "198" },
-          { label: "Sharing", amount: "378" },
-          { label: "Family", amount: "658" },
-        ],
-      },
-      {
-        name: "Miki",
-        note: "Thick fresh wheat",
-        price: [
-          { label: "Solo", amount: "198" },
-          { label: "Sharing", amount: "378" },
-          { label: "Family", amount: "658" },
-        ],
-      },
-      {
-        name: "Bihon",
-        note: "Thin rice noodles",
-        price: [
-          { label: "Solo", amount: "198" },
-          { label: "Sharing", amount: "378" },
-          { label: "Family", amount: "658" },
-        ],
-      },
-      {
-        name: "Chami",
-        note: "Lucban-style",
-        price: [
-          { label: "Solo", amount: "198" },
-          { label: "Sharing", amount: "378" },
-          { label: "Family", amount: "658" },
-        ],
-      },
     ],
   },
   {
@@ -149,11 +84,6 @@ export const menuSections: MenuSection[] = [
         price: "688",
       },
       {
-        name: "Beer Bucket 10+1",
-        note: "Mix and match, served with peanuts",
-        price: "1288",
-      },
-      {
         name: "Signature Tower Drink",
         note: "Galaxy Tower or Red Punch",
         price: "788",
@@ -163,18 +93,6 @@ export const menuSections: MenuSection[] = [
         note: "Unlimited refills, with pulutan",
         price: "1288",
       },
-    ],
-  },
-  {
-    id: "kape",
-    title: "Kape",
-    subtitle: "The reason we open early",
-    items: [
-      { name: "Araku Specialty", price: "160" },
-      { name: "Americano", price: "150" },
-      { name: "Long Black", price: "160" },
-      { name: "Cappuccino", price: "150" },
-      { name: "Cold Brew", price: "160" },
     ],
   },
 ];
