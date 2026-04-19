@@ -13,6 +13,7 @@ export type MenuItem = {
   note?: InlineNote;
   description?: string;
   price: ItemPrice;
+  favorite?: boolean;
 };
 
 export type FlatBand = {
@@ -49,7 +50,7 @@ export const menuSections: MenuSection[] = [
     items: [
       { name: "Lumpia ni Ate", aside: "Togue", price: flat("180") },
       { name: "Special Embutido", price: flat("230") },
-      { name: "Samosa", price: flat("200") },
+      { name: "Samosa", price: flat("200"), favorite: true },
       { name: "Peanuts", price: flat("75") },
       { name: "Mango Salsa", price: flat("150") },
       { name: "Batchoy", price: flat("128") },
@@ -89,6 +90,7 @@ export const menuSections: MenuSection[] = [
       {
         name: "Bulalo",
         price: tiers(["Solo", "308"], ["Sharing", "608"], ["Family", "1228"]),
+        favorite: true,
       },
       {
         name: "Nilagang Baka",
@@ -230,6 +232,7 @@ export const menuSections: MenuSection[] = [
       {
         name: "Mutton Biryani",
         price: tiers(["Sharing", "788"], ["Family", "1288"]),
+        favorite: true,
       },
     ],
   },
@@ -307,6 +310,7 @@ export const menuSections: MenuSection[] = [
         price: flat("275"),
         description:
           "Sunny-side-up egg, sliced chicken, tuna sandwich, rice, and brewed coffee.",
+        favorite: true,
       },
       {
         name: "Clubhouse Sandwich",
@@ -387,7 +391,7 @@ export const menuSections: MenuSection[] = [
     subtitle: "For thirst, for the table, for just because.",
     items: [
       { name: "Coke Float", price: flat("209") },
-      { name: "Mexican Hot Chocolate", price: flat("225") },
+      { name: "Mexican Hot Chocolate", price: flat("225"), favorite: true },
       {
         name: "Flexitarian Lassi",
         price: flat("230"),
