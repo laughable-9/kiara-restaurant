@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Cormorant_Garamond } from "next/font/google";
+import { Playfair_Display, Cormorant_Garamond, Cormorant_SC } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -14,8 +14,15 @@ const playfair = Playfair_Display({
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
+  display: "swap",
+});
+
+const cormorantSC = Cormorant_SC({
+  variable: "--font-cormorant-sc",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -40,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${playfair.variable} ${cormorant.variable} ${cormorantSC.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         {children}

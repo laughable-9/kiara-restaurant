@@ -2,11 +2,15 @@
 
 @theme {
   --color-kiara-burgundy: #673146;
+  --color-kiara-burgundy-deep: #4e2335;
   --color-kiara-cream: #fff6e2;
   --color-kiara-motif: #ab5f64;
+  --color-kiara-motif-soft: #c78187;
 
   --font-display: var(--font-playfair), ui-serif, Georgia, serif;
   --font-body: var(--font-cormorant), ui-serif, Georgia, serif;
+  --font-smallcaps: var(--font-cormorant-sc), var(--font-cormorant), ui-serif,
+    Georgia, serif;
 }
 
 :root {
